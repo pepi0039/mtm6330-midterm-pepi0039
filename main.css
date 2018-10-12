@@ -79,6 +79,9 @@ p {
     font-family: 'Oswald', sans-serif;
 }
 
+p.work {
+    text-align: center;
+
 .containerContent {
     margin: 1rem;
     padding: 1rem;
@@ -146,3 +149,34 @@ footer {
     margin: 0 auto;
 }
 
+/* the following was sourced from w3 schools responsive grid layout and is used on the "work" page. */
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 100%;
+    padding: 10px 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
