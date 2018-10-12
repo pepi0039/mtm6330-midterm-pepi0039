@@ -28,7 +28,7 @@ header {
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 15rem;
+    height: 17rem;
 }
 
 nav {
@@ -48,15 +48,16 @@ nav ul li {
     text-align: center;
     text-decoration: none;
     list-style-type: none;
+    padding: 1px;
 }
 
 a {
-    color: #BDC3C7;
+    color: white;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: #e08283;
 }
 
 h1 {
@@ -81,6 +82,7 @@ p {
 
 p.work {
     text-align: center;
+}
 
 .containerContent {
     margin: 1rem;
@@ -136,7 +138,7 @@ fieldset {
 
 footer {
     position: fixed;
-    height: 2rem;
+    height: 3rem;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -146,7 +148,7 @@ footer {
 }
 
 .social {
-    margin: 0 auto;
+    align-content: center;
 }
 
 /* the following was sourced from w3 schools responsive grid layout and is used on the "work" page. */
@@ -161,6 +163,7 @@ footer {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+    border: 3px solid #EEEEEE;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -179,4 +182,28 @@ footer {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+@media screen and (min-width: 1300px) {
+    nav ul {
+        width: 30%;
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    header {
+        height: 150px;
+    }
+
+
+
+    a {
+        padding: .667rem; 
+    }
+
 }
