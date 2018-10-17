@@ -135,7 +135,8 @@ footer {
   text-align: center; }
 
 .social {
-  align-content: center; }
+  align-content: center;
+  background-color: #2E3131; }
   .social .fab {
     width: 40px;
     padding-top: 10px;
