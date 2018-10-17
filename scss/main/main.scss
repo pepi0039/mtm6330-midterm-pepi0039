@@ -1,8 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Raleway";
 @import "https://fonts.googleapis.com/css?family=Oswald";
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 $lightgrey: #BDC3C7;
 $darkgrey: #2E3131;
@@ -55,6 +53,22 @@ nav {
 		}
 	}
 }
+
+.columnContainer { 
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 20px;
+		.column1, .column2, .column3 {
+			width: 100%;
+			padding: 20px;
+			p {
+			color: $black;
+		}
+	}
+
+}
+
 a {
 	color: $white;
 	text-decoration: none;
@@ -78,6 +92,7 @@ h2 {
 p {
 	font-family: 'Oswald', sans-serif;
 }
+
 p.work {
 	text-align: center;
 }
@@ -86,10 +101,12 @@ p.work {
 	padding: 1rem;
 	max-width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 .containerCV {
 	margin: 0 auto;
 	img {
@@ -172,12 +189,34 @@ footer {
 		flex: 50%;
 		max-width: 50%;
 	}
+
+	form {
+		max-width: 50%;
+	}
+
+	video, .camera {
+		display: block;
+    	margin-left: auto;
+   		margin-right: auto;
+    	width: 50%;
+	}
 }
 @media screen and (max-width: 600px) {
 	.column {
 		-ms-flex: 100%;
 		flex: 100%;
 		max-width: 100%;
+	}
+
+	form {
+		max-width: 50%;
+	}
+
+	video, .camera {
+		display: block;
+    	margin-left: auto;
+   		margin-right: auto;
+    	width: 50%;
 	}
 }
 
@@ -204,20 +243,42 @@ footer {
     }
     
 	.containerCV {
-        max-width: 100px;
+        max-width: 500px;
         
 		.resume {
             
             .img {
-
-            
-			    
-                margin: 0;
-                align-items: center;
+				margin: 0;
+				align-items: center;
+				max-width: 500px;
+				height: 300px;
+				
         }
 		}
-    }
-    
+	}
+	
+	.columnContainer { 
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		padding: 20px;
+			.column1, .column2, .column3 {
+				width: 50%;
+				padding: 120px;
+				p {
+				color: $black;
+			}
+		}
+	
+	}
+
+	.video, .camera {
+		display: block;
+    	margin-left: auto;
+   		margin-right: auto;
+    	width: 50%;
+	}
+
 	form {
 		font-family: 'Oswald', sans-serif;
 		max-width: 50%;

@@ -1,7 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Raleway";
 @import "https://fonts.googleapis.com/css?family=Oswald";
-/* Responsive layout - makes a two column-layout instead of four columns */
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 html {
   box-sizing: border-box; }
 
@@ -40,6 +38,17 @@ nav {
       text-decoration: none;
       list-style-type: none;
       padding: 1px; }
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px; }
+  .columnContainer .column1, .columnContainer .column2, .columnContainer .column3 {
+    width: 100%;
+    padding: 20px; }
+    .columnContainer .column1 p, .columnContainer .column2 p, .columnContainer .column3 p {
+      color: #000000; }
 
 a {
   color: #EEEEEE;
@@ -146,13 +155,23 @@ footer {
   .column {
     -ms-flex: 50%;
     flex: 50%;
-    max-width: 50%; } }
+    max-width: 50%; }
+  video, .camera {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; } }
 
 @media screen and (max-width: 600px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+  video, .camera {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; } }
 
 @media screen and (min-width: 1300px) {
   nav ul {
@@ -169,10 +188,27 @@ footer {
   a {
     padding: .667rem; }
   .containerCV {
-    max-width: 100px; }
+    max-width: 500px; }
     .containerCV .resume .img {
       margin: 0;
-      align-items: center; }
+      align-items: center;
+      max-width: 500px;
+      height: 300px; }
+  .columnContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 20px; }
+    .columnContainer .column1, .columnContainer .column2, .columnContainer .column3 {
+      width: 50%;
+      padding: 120px; }
+      .columnContainer .column1 p, .columnContainer .column2 p, .columnContainer .column3 p {
+        color: #000000; }
+  .video, .camera {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
   form {
     font-family: 'Oswald', sans-serif;
     max-width: 50%;
