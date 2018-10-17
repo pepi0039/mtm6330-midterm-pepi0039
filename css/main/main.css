@@ -44,10 +44,10 @@ nav {
   flex-direction: column;
   align-content: center;
   padding: 20px; }
-  .columnContainer .column1, .columnContainer .column2, .columnContainer .column3 {
+  .columnContainer .column1, .columnContainer .column2 {
     width: 100%;
     padding: 20px; }
-    .columnContainer .column1 p, .columnContainer .column2 p, .columnContainer .column3 p {
+    .columnContainer .column1 p, .columnContainer .column2 p {
       color: #000000; }
 
 a {
@@ -79,6 +79,12 @@ p.work {
   margin: 1rem;
   padding: 1rem;
   max-width: 100%; }
+
+.video, .camera {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; }
 
 img {
   max-width: 100%;
@@ -152,33 +158,33 @@ footer {
     vertical-align: middle;
     border: 3px solid #EEEEEE; }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .column {
     -ms-flex: 50%;
     flex: 50%;
-    max-width: 50%; }
+    max-width: 100%; }
   form {
     max-width: 50%; }
   .video, .camera {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%; } }
+    width: 30%; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%; }
-  form {
+  .contactContainer {
     max-width: 50%; }
-  video, .camera {
+  .video, .camera {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%; } }
+    max-width: 40%; } }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1224px) {
   nav ul {
     width: 30%;
     align-content: center;
@@ -214,8 +220,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 50%; }
-    .video img, .camera img {
-      max-width: 80%; }
   form {
     font-family: 'Oswald', sans-serif;
     max-width: 50%;

@@ -63,14 +63,13 @@ nav {
 	flex-direction: column;
 	align-content: center;
 	padding: 20px;
-		.column1, .column2, .column3 {
+		.column1, .column2, {
 			width: 100%;
 			padding: 20px;
 			p {
 			color: $black;
+			}
 		}
-	}
-
 }
 
 a {
@@ -104,6 +103,13 @@ p.work {
 	margin: 1rem;
 	padding: 1rem;
 	max-width: 100%;
+}
+
+.video, .camera {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
 }
 
 img {
@@ -191,11 +197,11 @@ footer {
 
 // this is where the w3 schools responsive grid layout ends, back to regularly scheduled programming //
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 	.column {
 		-ms-flex: 50%;
 		flex: 50%;
-		max-width: 50%;
+		max-width: 100%;
 	}
 
 	form {
@@ -206,30 +212,30 @@ footer {
 		display: block;
     	margin-left: auto;
    		margin-right: auto;
-		max-width: 50%;
+		width: 30%;
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
 	.column {
 		-ms-flex: 100%;
 		flex: 100%;
 		max-width: 100%;
 	}
 
-	form {
+	.contactContainer {
 		max-width: 50%;
 	}
 
-	video, .camera {
+	.video, .camera {
 		display: block;
     	margin-left: auto;
    		margin-right: auto;
-    	max-width: 50%;
+    	max-width: 40%;
 	}
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1224px) {  //desktop breakpoint//
 	nav {
 		ul {
 			width: 30%;
@@ -284,10 +290,6 @@ footer {
     	margin-left: auto;
    		margin-right: auto;
 		width: 50%;
-
-			img {
-				max-width: 80%;
-			}
 	}
 
 	form {
