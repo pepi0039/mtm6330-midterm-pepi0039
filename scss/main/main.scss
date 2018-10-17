@@ -126,6 +126,7 @@ form {
 	position: relative;
 	background-color: $white;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	margin-bottom: 200px;
 }
 fieldset {
 	color: #000000;
@@ -147,7 +148,7 @@ fieldset {
 }
 footer {
 	position: fixed;
-	height: 3rem;
+	height: 50px;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -163,7 +164,7 @@ footer {
 		padding-bottom: 10px;
 	}
 }
-.fa-instagram {
+.fa-instagram { // this controls the hover colour of the instagram and linkedin icons in the footer //
 	&:hover {
 		color: $pink;
 	}
@@ -187,7 +188,10 @@ footer {
 		border: 3px solid $white;
 	}
 }
-@media screen and (max-width: 800px) {
+
+// this is where the w3 schools responsive grid layout ends, back to regularly scheduled programming //
+
+@media screen and (max-width: 600px) {
 	.column {
 		-ms-flex: 50%;
 		flex: 50%;
@@ -198,14 +202,15 @@ footer {
 		max-width: 50%;
 	}
 
-	video, .camera {
+	.video, .camera {
 		display: block;
     	margin-left: auto;
    		margin-right: auto;
-    	width: 50%;
+		max-width: 50%;
 	}
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 800px) {
 	.column {
 		-ms-flex: 100%;
 		flex: 100%;
@@ -220,11 +225,9 @@ footer {
 		display: block;
     	margin-left: auto;
    		margin-right: auto;
-    	width: 50%;
+    	max-width: 50%;
 	}
 }
-
-// this is where the w3 schools responsive grid layout ends, back to regularly scheduled programming //
 
 @media screen and (min-width: 1300px) {
 	nav {
@@ -266,7 +269,7 @@ footer {
 		flex-direction: row;
 		align-content: center;
 		padding: 20px;
-			.column1, .column2, .column3 {
+			.column1, .column2 {
 				width: 50%;
 				padding: 120px;
 				p {
@@ -280,7 +283,11 @@ footer {
 		display: block;
     	margin-left: auto;
    		margin-right: auto;
-    	width: 50%;
+		width: 50%;
+
+			img {
+				max-width: 80%;
+			}
 	}
 
 	form {
