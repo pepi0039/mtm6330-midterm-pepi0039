@@ -156,6 +156,8 @@ footer {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%; }
+  form {
+    max-width: 50%; }
   video, .camera {
     display: block;
     margin-left: auto;
@@ -167,6 +169,8 @@ footer {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%; }
+  form {
+    max-width: 50%; }
   video, .camera {
     display: block;
     margin-left: auto;

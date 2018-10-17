@@ -1,12 +1,15 @@
 @import "https://fonts.googleapis.com/css?family=Raleway";
 @import "https://fonts.googleapis.com/css?family=Oswald";
 
+// below are my SCSS variables //
 
 $lightgrey: #BDC3C7;
 $darkgrey: #2E3131;
 $pink: #e08283;
 $white: #EEEEEE;
 $black: #000000;
+
+// the following was used from our week 4 in-class to set some baseline values //
 
 html {
 	box-sizing: border-box; 
@@ -20,6 +23,7 @@ html {
 		box-sizing: inherit;
 	}
 }
+
 body {
 	background-color: $lightgrey;
 	margin: 0;
@@ -220,7 +224,7 @@ footer {
 	}
 }
 
-// this is where the w3 schools responsive grid layout ends, back to regularly scheduled programming //@at-root
+// this is where the w3 schools responsive grid layout ends, back to regularly scheduled programming //
 
 @media screen and (min-width: 1300px) {
 	nav {
