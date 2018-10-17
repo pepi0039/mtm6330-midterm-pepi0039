@@ -222,7 +222,7 @@ footer {
     width: 50%; }
   form {
     font-family: 'Oswald', sans-serif;
-    max-width: 50%;
+    width: 70%;
     border: none;
     margin: 0 auto;
     position: relative;
@@ -235,7 +235,7 @@ footer {
     padding: 30px; }
   input {
     height: 30px;
-    width: 300px; }
+    width: 100%s; }
   textarea {
     height: 200px;
-    width: 400px; } }
+    width: 240px; } }

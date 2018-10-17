@@ -294,14 +294,14 @@ footer {
 
 	form {
 		font-family: 'Oswald', sans-serif;
-		max-width: 50%;
+		width: 70%;
 		border: none;
 		margin: 0 auto;
 		position: relative;
 		background-color: $white;
 		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    }
-    
+	}
+	
 	fieldset {
 		color: $black;
 		font-family: 'Oswald', sans-serif;
@@ -310,10 +310,10 @@ footer {
 	}
 	input {
 		height: 30px;
-		width: 300px;
+		width: 100%s;
 	}
 	textarea {
 		height: 200px;
-		width: 400px;
+		width: 240px;
 	}
 }
