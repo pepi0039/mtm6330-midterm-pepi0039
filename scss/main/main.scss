@@ -117,7 +117,7 @@ img {
 	height: auto;
 }
 
-.containerCV {
+.containerCV { // this holds the resume //
 	margin: 0 auto;
 	img {
 		display: flex;
@@ -125,7 +125,7 @@ img {
 	}
 }
 form {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif; //contact form //
 	max-width: 90%;
 	border: none;
 	margin: 0 auto;
@@ -199,7 +199,7 @@ footer {
 
 // this is where the w3 schools responsive grid layout ends, back to regularly scheduled programming //
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) { // breakpoint switches from virtually all mobile devices //
 	.column {
 		-ms-flex: 50%;
 		flex: 50%;
@@ -218,7 +218,7 @@ footer {
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) { // tablet view //
 	.column {
 		-ms-flex: 100%;
 		flex: 100%;
@@ -272,7 +272,7 @@ footer {
 		}
 	}
 	
-	.columnContainer { 
+	.columnContainer { // this container holds the columns on the main page //
 		display: flex;
 		flex-direction: row;
 		align-content: center;
@@ -287,7 +287,7 @@ footer {
 	
 	}
 
-	.video, .camera {
+	.video, .camera { // these are the svg icons on the home page //
 		display: block;
     	margin-left: auto;
    		margin-right: auto;
@@ -295,7 +295,7 @@ footer {
 	}
 
 	form {
-		font-family: 'Oswald', sans-serif;
+		font-family: 'Oswald', sans-serif; //contact form //
 		width: 70%;
 		border: none;
 		margin: 0 auto;
@@ -304,7 +304,7 @@ footer {
 		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	}
 	
-	fieldset {
+	fieldset { 
 		color: $black;
 		font-family: 'Oswald', sans-serif;
 		border: none;
